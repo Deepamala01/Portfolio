@@ -1,0 +1,198 @@
+/* Responsive CSS */
+
+/* Tablet & Smaller Laptops */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    .hero-image {
+        width: 350px;
+        height: 350px;
+    }
+
+    .glow-halo {
+        width: 400px;
+        height: 400px;
+    }
+
+    .services-row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .edu-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .edu-card.main-edu {
+        grid-column: span 2;
+    }
+}
+
+/* Tablet Portrait */
+@media (max-width: 768px) {
+
+    /* Nav */
+    .menu-toggle {
+        display: block;
+        z-index: 1001;
+    }
+
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        gap: 0;
+        flex-direction: column;
+        background-color: #000;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 15px 0;
+    }
+
+    .nav-link {
+        font-size: 1.5rem;
+    }
+
+    /* Hero */
+    .hero-container {
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-content {
+        margin-top: 40px;
+    }
+
+    .hero-bio {
+        margin: 0 auto 30px;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .hero-image-wrapper {
+        margin-top: 20px;
+    }
+
+    /* About */
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image-wrapper {
+        margin-bottom: 30px;
+    }
+
+    /* Skills */
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Projects */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Timeline */
+    .timeline::after {
+        left: 31px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .timeline-item::after {
+        left: 21px;
+    }
+
+    .left::after,
+    .right::after {
+        left: 21px;
+    }
+
+    .right {
+        left: 0;
+    }
+
+    /* Education & Services */
+    .edu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .edu-card.main-edu {
+        grid-column: span 1;
+    }
+
+    .services-row {
+        grid-template-columns: 1fr;
+    }
+
+    /* Contact */
+    .contact-wrapper {
+        flex-direction: column;
+    }
+
+    /* Global Typography */
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .section-header .line {
+        margin-bottom: 30px;
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .hero-image {
+        width: 280px;
+        height: 280px;
+    }
+
+    .glow-halo {
+        width: 300px;
+        height: 300px;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+}
